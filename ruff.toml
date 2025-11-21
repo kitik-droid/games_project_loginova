@@ -1,7 +1,6 @@
 line-length = 88
 target-version = "py312"
 
-[tool.ruff.lint]
 select = [
     "E",  # pycodestyle errors
     "W",  # pycodestyle warnings
@@ -12,5 +11,8 @@ select = [
     "UP", # pyupgrade
 ]
 
-[tool.ruff.lint.isort]
+extend-select = []
+ignore = []
+
+[isort]
 known-first-party = ["games_project_loginova"]

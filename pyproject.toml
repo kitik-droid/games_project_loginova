@@ -15,6 +15,13 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["games_project_loginova"]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.14.5",
+]
+
 [project.scripts]
 VD-games = "games_project_loginova.VD_games.scripts.VD_games:play_game"
 VD-even = "games_project_loginova.VD_games.scripts.VD_even:play_even_game"
+VD-calc = "games_project_loginova.VD_games.scripts.VD_calc:play_calc_game"
+VD-gcd = "games_project_loginova.VD_games.scripts.VD_gcd:play_gcd_game"
