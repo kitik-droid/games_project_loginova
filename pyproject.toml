@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "prompt>=0.4.1",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -14,4 +16,5 @@ build-backend = "hatchling.build"
 packages = ["games_project_loginova"]
 
 [project.scripts]
-VD-games = "games_project_loginova.VD_games.scripts.VD_main:main"
+VD-games = "games_project_loginova.VD_games.scripts.VD_games:play_game"
+VD-even = "games_project_loginova.VD_games.scripts.VD_even:play_even_game"

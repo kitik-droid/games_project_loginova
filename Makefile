@@ -24,3 +24,8 @@ help:
 	@echo "  make build         - Собрать пакет"
 	@echo "  make package-install - Установить пакет в систему"
 	@echo "  make clean         - Очистить временные файлы"
+lint:
+	uv run ruff check games_project_loginova/
+
+lint-fix:
+	uv run ruff check --fix games_project_loginova/
